@@ -1,14 +1,24 @@
-<!doctype html>
+<?php
+/**
+ * The template for displaying all single posts
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
+ *
+ * @package WordPress
+ * @subpackage Twenty_Nineteen
+ * @since Twenty Nineteen 1.0
+ */
 
-<html>
-<head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<link rel="profile" href="https://gmpg.org/xfn/11" />
-    <!-- <link rel="stylesheet" href="front-page.css"> -->
-    <?php wp_enqueue_style( 'style', get_stylesheet_uri() ); ?>
-</head>
-    <body>
-        <h1>Dave's Emporium</h1>
-    </body>
-</html>
+get_header(); ?>
+
+<section class="home-page">
+	<div class="main-content">
+		<div class="content">
+			<img src="http://localhost/daves-test-site/wp-content/uploads/2021/01/daves-emporium-logo.png" alt="daves-emporium-logo"/>
+			<h1>Canna Accessories and Seeds Hand Selected for Patients, By Patients</h1>
+			
+		</div>
+	</div>
+</section>
+
+<?php get_footer(); ?>

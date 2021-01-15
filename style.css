@@ -3732,6 +3732,7 @@ body.page .main-navigation {
 --------------------------------------------------------------*/
 .site-header {
   padding: 1em;
+  text-align: center;
 }
 
 .site-header.featured-image {
@@ -3749,6 +3750,7 @@ body.page .main-navigation {
   .site-header {
     margin: 0;
     padding: 3rem 0;
+    text-align: center;
   }
   .site-header.featured-image {
     min-height: 100vh;
@@ -6595,3 +6597,55 @@ svg {
 .gallery-item > div > a:focus {
   box-shadow: 0 0 0 2px #0073aa;
 }
+
+/* ================================================================================================================= */
+/* CUSTOM EDITS BEIGN  */
+/* ================================================================================================================= */
+
+/*********** HOME PAGE EDITS ***********/
+
+.site-main{
+  font-size: 50px;
+  text-align: center;
+  background-color: blue;
+}
+
+/* .site-content{
+  width:100%;
+  height:100%;
+} */
+
+.content{
+  display:flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+.site-header{
+  display: none;
+}
+
+.content img {
+  display:flex;
+  justify-content: center;
+  width: 45%;
+  margin: 0 5%;
+}
+
+.home-page .content h1{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: lighter;
+  border: 3px solid #AEB87D;
+  width: 50%;
+  padding: 1%;
+}
+
+h1:not(.site-title):before, h2:before {
+  content: none;
+}   
+/* ================================================================================================================= */
+/* CUSTOM EDITS END  */
+/* ================================================================================================================= */
