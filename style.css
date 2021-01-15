@@ -6604,6 +6604,10 @@ svg {
 
 /*********** HOME PAGE EDITS ***********/
 
+h1:not(.site-title):before, h2:before {
+  content: none;
+}  
+
 .site-main{
   font-size: 50px;
   text-align: center;
@@ -6615,7 +6619,7 @@ svg {
   height:100%;
 } */
 
-.content{
+.mission{
   display:flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -6624,14 +6628,14 @@ svg {
   display: none;
 }
 
-.content img {
+.mission img {
   display:flex;
   justify-content: center;
   width: 45%;
   margin: 0 5%;
 }
 
-.home-page .content h1{
+.home-page .mission h1{
   display:flex;
   justify-content: center;
   align-items: center;
@@ -6643,9 +6647,22 @@ svg {
   padding: 1%;
 }
 
-h1:not(.site-title):before, h2:before {
-  content: none;
-}   
+#shop-content{
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 300px;
+}
+
+.shop-content-flex-item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px black solid;
+  height: 100%
+}
+
+
 /* ================================================================================================================= */
 /* CUSTOM EDITS END  */
 /* ================================================================================================================= */
