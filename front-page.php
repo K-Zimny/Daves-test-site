@@ -18,14 +18,17 @@ get_header(); ?>
 			<h1>Canna Accessories and Seeds Hand Selected for Patients, By Patients</h1>
 		</div>
 		<div id="shop-content">
-			<div class="shop-content-flex-item">
-				<p>Place holder text</p>
+			<div id="shop" class="shop-content-flex-item">
+				<h2>Seeds &amp; Accessories</h2>
+				<p>View our curated collection of seeds and accessories. From superb variates of seeds to custom accessories, we have everything you've ever wanted!</p>
 			</div>	
-			<div class="shop-content-flex-item">
-				<p>Place holder text</p>
+			<div id="education"class="shop-content-flex-item">
+				<h2>Education</h2>
+				<p>We not only nurture the seeds, we nurture the mind. View our library to read articles, find groups, and learn more about seeds, and life.</p>
 			</div>	
-			<div class="shop-content-flex-item">
-				<p>Place holder text</p>
+			<div id="about" class="shop-content-flex-item">
+				<h2>About us</h2>
+				<p>Dave's Emporium started with a dream and with weed. Now that dream is being the best collection of seeds on the web. Read the whole story now!</p>
 			</div>	
 		</div>	
 	</div>

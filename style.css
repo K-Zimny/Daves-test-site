@@ -6614,10 +6614,17 @@ h1:not(.site-title):before, h2:before {
   background-color: blue;
 }
 
-/* .site-content{
+.site-content{
   width:100%;
   height:100%;
-} */
+  display: flex;
+  justify-content: center;
+  background-color: #FAFAF2;
+}
+
+.home-page{
+  width: 90%;
+}
 
 .mission{
   display:flex;
@@ -6631,7 +6638,7 @@ h1:not(.site-title):before, h2:before {
 .mission img {
   display:flex;
   justify-content: center;
-  width: 45%;
+  width: 85%;
   margin: 0 5%;
 }
 
@@ -6640,27 +6647,168 @@ h1:not(.site-title):before, h2:before {
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: lighter;
   border: 3px solid #AEB87D;
-  width: 50%;
+  width: 90%;
   padding: 1%;
+  line-height: 55px;
+  background-color: #F1F3F0;
+
 }
 
 #shop-content{
-  display:flex;
-  justify-content: space-around;
+  /* display:flex;
+  justify-content: space-between;
   align-items: center;
-  height: 300px;
+  height: 500px; */
 }
 
 .shop-content-flex-item{
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-flow: row wrap;
   border: 1px black solid;
-  height: 100%
+  height: 100%;
+  margin: 5% 0;
 }
+
+.shop-content-flex-item h2, .shop-content-flex-item p{
+  width: 100%;
+  text-align: center;
+}
+
+
+.shop-content-flex-item h2{
+  font-weight: normal;
+  text-decoration: underline;
+}
+
+.shop-content-flex-item p{
+  padding: 0 5%;
+}
+
+#shop{
+  background-color: #AEB87D;
+}
+
+#education{
+  background-color: #BF7DB3
+}
+
+#about{
+  background-color: #88B8B5;
+}
+
+/*********** Computer screen  ***********/
+@media (min-width: 1200px){
+  h1:not(.site-title):before, h2:before {
+    content: none;
+  }  
+
+  .site-main{
+    font-size: 50px;
+    text-align: center;
+    background-color: blue;
+  }
+
+  /* .site-content{
+    width:100%;
+    height:100%;
+  } */
+
+  .mission{
+    display:flex;
+    justify-content: center;
+    flex-flow: row wrap;
+  }
+  .site-header{
+    display: none;
+  }
+
+  .mission img {
+    display:flex;
+    justify-content: center;
+    width: 45%;
+    margin: 0 5%;
+  }
+
+  .home-page .mission h1{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: lighter;
+    border: 3px solid #AEB87D;
+    width: 50%;
+    padding: 1%;
+  }
+
+  #shop-content{
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: stretch;
+    height: auto;
+    /* height: 600px; */
+    flex: 1;
+  }
+
+  /* #education{
+    flex-flow: column;
+    flex-grow: 1;
+  } */
+
+  /* #shop{
+    width: 30%;
+    display: flex;
+    align-items: center;
+  } */
+
+  #shop-content h2{
+    font-size: 1.5em;
+    font-weight: normal;
+  }
+
+  #shop, #education, #about {
+    margin: 0;
+    width: 30%;
+    height: 100%;
+  }
+
+  #education p{
+    display: flex;
+    align-items: center;
+  }
+  
+  /* #about{
+    width: 30%;
+    display: flex;
+    align-items: center;
+  } */
+
+  #about p{
+    display: flex;
+    align-items: center;
+  }
+
+  .shop-content-flex-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    border: 1px black solid;
+    /* height: 100% */
+  }
+
+  .shop-content-flex-item h2, .shop-content-flex-item p{
+    width: 100%;
+    text-align: center;
+  }
+}
+
 
 
 /* ================================================================================================================= */
