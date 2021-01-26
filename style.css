@@ -6604,14 +6604,19 @@ svg {
 
 /*********** HOME PAGE EDITS ***********/
 
+/*mobile styles*/
+
+body{
+  background-color: #FAFAF2;
+}
+
 h1:not(.site-title):before, h2:before {
   content: none;
 }  
 
-.site-main{
-  font-size: 50px;
+.home-page{
   text-align: center;
-  background-color: blue;
+  width: 90%;
 }
 
 .site-content{
@@ -6619,20 +6624,28 @@ h1:not(.site-title):before, h2:before {
   height:100%;
   display: flex;
   justify-content: center;
-  background-color: #FAFAF2;
 }
 
-.home-page{
-  width: 90%;
+.site-header{
+  display: none;
+}
+
+nav{
+  display:none;
 }
 
 .mission{
   display:flex;
   justify-content: center;
   flex-flow: row wrap;
-}
-.site-header{
-  display: none;
+  background-image: url("https://images.unsplash.com/photo-1536819114556-1e10f967fb61?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  margin-bottom: 5%;
+  min-height: 350px;
+  align-items: center;
+  border: 3px solid #3B5C2B;
 }
 
 .mission img {
@@ -6643,50 +6656,80 @@ h1:not(.site-title):before, h2:before {
 }
 
 .home-page .mission h1{
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
   font-size: 1.5rem;
-  font-weight: lighter;
-  border: 3px solid #AEB87D;
-  width: 90%;
+  font-family: 'Raleway', sans-serif;
+  font-weight: normal;
+  line-height: 150%;
+  border: none;
+  width: 70%;
+  color: white;
   padding: 1%;
-  line-height: 55px;
-  background-color: #F1F3F0;
-
+  font-family: 'Raleway', sans-serif;
+  height: 10%;
+  background-color: transparent;
+  margin:0;
 }
 
 #shop-content{
-  /* display:flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 500px; */
+  padding-bottom: 10%;
+}
+
+.shop-photo{
+  display:none;
 }
 
 .shop-content-flex-item{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
   border: 1px black solid;
   height: 100%;
   margin: 5% 0;
 }
 
-.shop-content-flex-item h2, .shop-content-flex-item p{
-  width: 100%;
-  text-align: center;
-}
-
-
 .shop-content-flex-item h2{
   font-weight: normal;
+  text-decoration: underline;
   text-decoration: underline;
 }
 
 .shop-content-flex-item p{
-  padding: 0 5%;
+  padding: 0 7%;
+}
+
+.header h2{
+  font-family: 'Raleway', sans-serif;
+  font-weight: normal;
+  text-decoration: underline;
+
+}
+
+.content{
+  display: flex;
+  justify-content: center;
+}
+.content p{
+  font-family: 'Raleway', sans-serif;
+  font-weight: normal;
+  width: 90%;
+}
+
+#consult-button{
+  color: black;
+  background-color:#F08551;
+  border-radius: 5px;
+  padding: 15px 50px;
+  transition-duration: 0.4s;
+  height: 15%;
+  margin: 5% 0;
+  width: 80%;
+  font-size: 1em;
+  font-weight: normal;
+  border: 1px solid black;
+}
+
+#shop, #education, #about {
+
+  /* width: 30%; */
+  border: 3px solid #3B5C2B;
+  margin-bottom: 3%;
 }
 
 #shop{
@@ -6701,30 +6744,80 @@ h1:not(.site-title):before, h2:before {
   background-color: #88B8B5;
 }
 
+.site-footer{
+  display:none;
+  }
+
 /*********** Computer screen  ***********/
 @media (min-width: 1200px){
+
+  body{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    background-color: #FAFAF2;
+
+  }
+
+  #page{
+    max-width: 1400px;
+    width: 100%;
+  }
+  
+  .site-header{
+    display: none;
+  }
+
   h1:not(.site-title):before, h2:before {
     content: none;
   }  
 
-  .site-main{
-    font-size: 50px;
-    text-align: center;
-    background-color: blue;
+  .flex-container{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    width: 100%;
   }
 
-  /* .site-content{
-    width:100%;
-    height:100%;
-  } */
+  #logo-container{
+    justify-content: flex-start;
+  }
+  .justify-left{
+    /* justify-content: flex-start; */
+  }
+
+  .justfify-right{
+    /* justify-content: flex-end; */
+  }
+
+  nav{
+    display:flex;
+    width: 100%;
+  }
+  nav ul{
+    display: flex;
+    list-style: none;
+  }
+
+  nav ul li{
+    padding: 0 25%;
+    font-family: 'Raleway', sans-serif;
+  }
+
+  #site-logo{
+    width: 40%;
+  }
 
   .mission{
     display:flex;
     justify-content: center;
     flex-flow: row wrap;
-  }
-  .site-header{
-    display: none;
+    min-height: 700px;
+    border: 3px solid #3B5C2B;
+    align-items: center;
+    margin-top: 1%;
   }
 
   .mission img {
@@ -6735,80 +6828,129 @@ h1:not(.site-title):before, h2:before {
   }
 
   .home-page .mission h1{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 2rem;
-    font-weight: lighter;
-    border: 3px solid #AEB87D;
-    width: 50%;
+    font-size: 2.5rem;
+    font-weight: normal;
+    line-height: 150%;
+    border: none;
+    width: 70%;
+    color: white;
     padding: 1%;
-  }
+    font-family: 'Raleway', sans-serif;
+    height: 10%;
+    background-color: transparent;
+    margin:0;
+    }
 
   #shop-content{
     display:flex;
-    flex-flow: row nowrap;
+    flex-flow: column nowrap;
     justify-content: space-around;
-    align-items: stretch;
-    height: auto;
-    /* height: 600px; */
-    flex: 1;
+    padding-bottom: 10%;
   }
 
-  /* #education{
-    flex-flow: column;
-    flex-grow: 1;
-  } */
-
-  /* #shop{
-    width: 30%;
+  .shop-content-flex-container{
     display: flex;
-    align-items: center;
-  } */
-
-  #shop-content h2{
-    font-size: 1.5em;
-    font-weight: normal;
+    justify-content: center;
+    flex-flow: row wrap;
+    /* border: 1px solid blue; */
+    /* height: 100%; */
   }
 
-  #shop, #education, #about {
-    margin: 0;
-    width: 30%;
-    height: 100%;
-  }
-
-  #education p{
-    display: flex;
-    align-items: center;
-  }
-  
-  /* #about{
-    width: 30%;
-    display: flex;
-    align-items: center;
-  } */
-
-  #about p{
-    display: flex;
-    align-items: center;
-  }
-
-  .shop-content-flex-item{
+  .half-flex-container{
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-    border: 1px black solid;
-    /* height: 100% */
   }
 
-  .shop-content-flex-item h2, .shop-content-flex-item p{
-    width: 100%;
-    text-align: center;
+  .flex-item{
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    /* border: 1px solid red; */
   }
+
+  .shop-photo{
+    display:flex;
+    height: 75%;
+    width: 75%;
+    border: 3px solid #3B5C2B;
+  }
+
+  .header{
+    height: 10%;
+    margin-top: auto;
+  }
+
+  .content{
+    height: 40%;
+    align-items: flex-start;
+  }
+
+  #consult-button{
+    /* color: black; */
+    /* background-color:#F08551; */
+    border-radius: 15px;
+    padding: 25px 50px;
+    /* transition-duration: 0.4s; */
+    height: 10%;
+    /* margin: 5% 0; */
+    width: 75%;
+    /* font-size: 1em; */
+    /* font-weight: normal; */
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #consult-button:hover{
+    background-color: #D0250B;
+  }
+
+/* .button-test{
+  height:30%
+} */
+
+  #shop, #education, #about {
+
+    /* width: 30%; */
+    border: 3px solid #3B5C2B;
+  }
+  
+
+  #shop-content h2{
+    font-size: 1.5em;
+    font-weight: normal;
+    text-decoration: underline;
+  } 
+
+  #shop-content p{
+    font-size: 1.2em;
+    font-weight: normal;
+    width: 75%;
+  } 
+
+  #shop{
+    order: 1;
+    /* width: 32%; */
+  }
+  
+  #education{
+    order: 2;
+  }
+
+  #about{
+    order:3;
+
+  }
+
+  .site-footer{
+    display:none;
+    }
+
 }
-
 
 
 /* ================================================================================================================= */
