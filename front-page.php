@@ -29,7 +29,7 @@ get_header(); ?>
 		</div>
 		<div class="mission">
 			<h1>Canna Accessories and Seeds Hand Selected for Patients, By Patients</h1>
-		</div>
+		</div> <!--End mission section-->
 		<div id="shop-content">
 			<div id="shop" class="shop-content-flex-container">
 				<div class="half-flex-container">
@@ -73,8 +73,8 @@ get_header(); ?>
 					<img class="shop-photo" src="https://images.unsplash.com/photo-1519074002996-a69e7ac46a42?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="about-img"/>
 				</div>
 			</div>	
-		</div>	
-	</div>
-</section>
+		</div> <!--End shop content section-->	
+	</div> <!--End main content section-->
+</section> <!--End home page section-->
 
 <?php get_footer(); ?>

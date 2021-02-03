@@ -6619,7 +6619,7 @@ h1:not(.site-title):before, h2:before {
   width: 90%;
 }
 
-.site-content{
+.home-page{
   width:100%;
   height:100%;
   display: flex;
