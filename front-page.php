@@ -21,7 +21,7 @@ get_header(); ?>
 				<nav>
 					<ul>
 						<li>Shop</li>
-						<li><a href=" http://localhost/daves-test-site/education/">Education</a></li>
+						<li><a href="http://localhost/daves-test-site/education/">Education</a></li>
 						<li>About</li>
 					</ul>
 				</nav>
@@ -56,7 +56,7 @@ get_header(); ?>
 					<div class="flex-item content">
 						<p>We not only nurture the seeds, we nurture the mind. View our library to read articles, find groups, and learn more about seeds, and life.</p>
 					</div>
-					<button id="consult-button" type="button" onclick="location.href='#contact';">Learn More</button>
+					<button id="consult-button" type="button" onclick="location.href='/localhost/daves-test-site/education/';">Learn More</button>
 				</div>
 			</div>	
 			<div id="about" class="shop-content-flex-container">
