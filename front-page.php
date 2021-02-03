@@ -21,7 +21,7 @@ get_header(); ?>
 				<nav>
 					<ul>
 						<li>Shop</li>
-						<li>Education</li>
+						<li><a href=" http://localhost/daves-test-site/education/">Education</a></li>
 						<li>About</li>
 					</ul>
 				</nav>
